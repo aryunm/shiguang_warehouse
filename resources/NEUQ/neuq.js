@@ -340,7 +340,7 @@
      * 从课表响应的 JavaScript 脚本中解析课程（树维教务核心解析逻辑）
      *
      * 树维系统返回的 HTML 中，表格单元格是空的，真正的课程数据在 <script> 中：
-     * var unitCount = 8;  // 每天的节次数
+     * var unitCount = 12;  // 每天的节次数
      * activity = new TaskActivity(teacherId, teacherName, courseId, courseName, ...);
      * index = day * unitCount + section;  // 计算课程在二维表格中的位置
      * table0.activities[index] = activity;
@@ -373,7 +373,7 @@
             const argsText = match[1] || "";
             const args = splitJsArgs(argsText);
             if (args.length < 7) continue;
-
+            
             // 解析 index 计算表达式，确定星期几和第几节
             const dayPart = match[2];
             const sectionPart = match[3];

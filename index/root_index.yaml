@@ -337,3 +337,8 @@ schools:
     name: "河南信息科技学院"
     initial: "H"
     resource_folder: "HIIT"
+    
+  - id: "NEUQ"
+    name: "东北大学秦皇岛校区"
+    initial: "N"
+    resource_folder: "NEUQ"
