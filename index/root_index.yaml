@@ -340,5 +340,5 @@ schools:
     
   - id: "NEUQ"
     name: "东北大学秦皇岛校区"
-    initial: "N"
+    initial: "D"
     resource_folder: "NEUQ"
