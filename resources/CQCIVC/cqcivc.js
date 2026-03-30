@@ -149,7 +149,7 @@ async function getAcademicYear() {
     console.log("JS: 提示用户输入学年。");
     return await window.AndroidBridgePromise.showPrompt(
         "选择学年",
-        "请输入要导入课程的学年（例如 2025）:",
+        "请输入要导入课程的起始学年（例如 2025-2026 应输入2025）:",
         currentYear,
         "validateYearInput"
     );
@@ -183,7 +183,7 @@ async function fetchAndParseCourses(academicYear, semesterIndex) {
 
     const semesterCode = getSemesterCode(semesterIndex);
     
-    // API URL 和请求体 (已修改：使用更稳定的 xskbcx_cxXsgrkb.html 接口，并添加了完整的 Body 参数)
+    // API URL 和请求体
     const xnmXqmBody = `xnm=${academicYear}&xqm=${semesterCode}&kzlx=ck&xsdm=&kclbdm=`; 
     const url = "http://jwxt.cqcivc.edu.cn/jwglxt/kbcx/xskbcx_cxXsgrkb.html?gnmkdm=N2151";
 
